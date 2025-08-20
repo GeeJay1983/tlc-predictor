@@ -87,12 +87,12 @@ enum Scenes7_8_9_10_11_12
 enum Scenes13_14_15_16
 {
     Default = 0x0,
-    Scene13MoreExplicit_Scene14MichaelLikesToKill = 0x10,
-    Scene13MoreExplicit_Scene14AboutSeatbelt = 0x20,
-    Scene13MoreExplicit_Scene14MichaelAboutRelation = 0x30,
-    Scene13LessExplicit_Scene14MichaelLikesToKill = 0x50,
-    Scene13LessExplicit_Scene14AboutSeatbelt = 0x60,
-    Scene13LessExplicit_Scene14MichaelAboutRelation = 0x70,
+    Scene13MoreExplicit_Scene14MichaelLikesToKill = 0x20,
+    Scene13MoreExplicit_Scene14AboutSeatbelt = 0x40,
+    Scene13MoreExplicit_Scene14MichaelAboutRelation = 0x60,
+    Scene13LessExplicit_Scene14MichaelLikesToKill = 0xA0,
+    Scene13LessExplicit_Scene14AboutSeatbelt = 0xC0,
+    Scene13LessExplicit_Scene14MichaelAboutRelation = 0xE0,
     Scene15WatchOutForKathryn = 0x08,
     Scene15TurnerWillUnderstand = 0x10,
     Scene15MichaelNeedsHelp = 0x18,
