@@ -12,20 +12,20 @@ So... Let's begin!
 
 ");
 
-Console.WriteLine("The intro sequence and SCENE 1 always play out exactly the same. So, no choices here.");
+Console.WriteLine("The intro sequence and SCENE 1 always plays out exactly the same. So, no choices here.");
 
 var optionsScene2 = new ScenePair<Scenes2_4_5_6>[] 
 {
     new(Scenes2_4_5_6.Scene2KathrynIsDressed, "Kathryn appears in her underwear, while Michael 'accidentally' watches her"),
     new(Scenes2_4_5_6.Scene2KathrynUndressing, "Kathryn appears while removing her bra, while Michael 'accidentally' watches her"),
-    new(Scenes2_4_5_6.Scene2PeekKathrynUndressing, "Michael sneaks below Kathryn's window, as he watches her undress")
+    new(Scenes2_4_5_6.Scene2PeekKathrynUndressing, "Michael sneaks beneath Kathryn's window, as he watches her undress")
 };
 
 var scene2Value = Helper.GetSceneValue(2, "How will Michael watch Kathryn at her bedroom window?", optionsScene2, clearScreen: false);
 
 Console.Clear();
 
-Console.WriteLine("SCENE 3 always play out exactly the same. So, no choices here.");
+Console.WriteLine("SCENE 3 always plays out exactly the same. So, no choices here.");
 
 var optionsScene4 = new ScenePair<Scenes2_4_5_6>[]
 {
@@ -39,7 +39,7 @@ var scene4Value = Helper.GetSceneValue(4, "How will the conversation between Kat
 var optionsScene5 = new ScenePair<Scenes2_4_5_6>[]
 {
     new(Scenes2_4_5_6.Scene5KathrynPredictsBehavior, "Allison says that Kathryn predicted Michael's behavior"),
-    new(Scenes2_4_5_6.Scene5MichaelIsReluctant, "Michael is reluctant in getting stuff from Jody's room"),
+    new(Scenes2_4_5_6.Scene5MichaelIsReluctant, "Michael is reluctant to get stuff from Jody's room"),
     new(Scenes2_4_5_6.Scene5MichaelIsAngry, "Michael gets angry at Allison")
 };
 
@@ -57,20 +57,20 @@ var scene6Value = Helper.GetSceneValue(6, "How will the conversation between Kat
 var optionsScene7 = new ScenePair<Scenes7_8_9_10_11_12>[]
 {
     new(Scenes7_8_9_10_11_12.Scene7MichaelIsAngry, "Michael gets angry when asked about the meditation sessions with Kathryn"),
-    new(Scenes7_8_9_10_11_12.Scene7MichaelIsNeutral, "Michael reacts neutral to meditation with Kathryn"),
-    new(Scenes7_8_9_10_11_12.Scene7KathrynAndAllisonLaugh, "Allison and Kathryn are playfully teasing Michael about Kathryn's mediation sessions")
+    new(Scenes7_8_9_10_11_12.Scene7MichaelIsNeutral, "Michael reacts neutrally to meditation with Kathryn"),
+    new(Scenes7_8_9_10_11_12.Scene7KathrynAndAllisonLaugh, "Allison and Kathryn are playfully teasing Michael about Kathryn's meditation sessions")
 };
 
 var scene7Value = Helper.GetSceneValue(7, "How will the conversation between Michael, Allison and Kathryn in the kitchen unfold?", optionsScene7);
 
 var optionsScene8 = new ScenePair<Scenes7_8_9_10_11_12>[]
 {
-    new(Scenes7_8_9_10_11_12.Scene8CharlotteInvites, "Charlotte is inviting towards Michael, she seems to like him"),
+    new(Scenes7_8_9_10_11_12.Scene8CharlotteInvites, "Charlotte acts invitingly toward Michael, she seems to like him"),
     new(Scenes7_8_9_10_11_12.Scene8CharlotteIsRejected, "Charlotte tries to get closer to Michael, but he isn't having it"),
     new(Scenes7_8_9_10_11_12.Scene8CharlotteFlirts, "Charlotte flirts with Michael, and he seems to like it")
 };
 
-var scene8Value = Helper.GetSceneValue(8, "At Michael's work, how will he interact with his collegue Charlotte?", optionsScene8);
+var scene8Value = Helper.GetSceneValue(8, "At Michael's work, how will he interact with his colleague Charlotte?", optionsScene8);
 
 var optionsScene9 = new[] 
 {
@@ -102,7 +102,7 @@ var optionsScene14 = new string[]
 {
     "Kathryn says that Michael likes to kill",
     "Kathryn will emphasize that Jody's situation is Michael's fault, because he didn't let her wear the seatbelt",
-    "Michael tries to talk about Kathryn previous relations"
+    "Michael tries to talk about Kathryn's previous relations"
 };
 
 var scene14Value = Helper.GetSceneValue(14, "How will the arguing scene between Michael and Kathryn unfold?", optionsScene14);
@@ -120,13 +120,13 @@ var scene15Value = Helper.GetSceneValue(15, "How will the conversation between M
 
 var optionsEnding = new ScenePair<Scenes13_14_15_16>[]
 {
-    new (Scenes13_14_15_16.Scene16KathrynDiesNoTurnerNoRecovery, "Kathryn dies, Michael and Allison return to their state of denial"),
+    new (Scenes13_14_15_16.Scene16KathrynDiesNoTurnerNoRecovery, "Kathryn dies, Michael and Allison return to a state of denial"),
     new (Scenes13_14_15_16.Scene16KathrynDiesWithTurnerNoRecovery, "Kathryn dies, Turner shows up and finds out about Kathryn"),
-    new (Scenes13_14_15_16.Scene16KathrynDiesNoTurnerRecovery, "Kathryn dies, Michael and Allison return to their state of denial, but are partially recovered"),
-    new (Scenes13_14_15_16.Scene16KathrynBecomesJody, "Kathryn is disabled and becomes fantasy Jody"),
+    new (Scenes13_14_15_16.Scene16KathrynDiesNoTurnerRecovery, "Kathryn dies, Michael and Allison return to a state of denial, but are partially recovered"),
+    new (Scenes13_14_15_16.Scene16KathrynBecomesJody, "Kathryn is disabled and becomes the fantasy Jody"),
     new (Scenes13_14_15_16.Scene16MichaelDiesKathrynTakesCare, "Michael dies, Kathryn takes care of Allison"),
-    new (Scenes13_14_15_16.Scene16KathrynIsHurtRecovery, "Kathryn is hurt and taken to hospital. Michael and Allison return to their state of denial"),
-    new (Scenes13_14_15_16.Scene16KathrynIsHurtNoRecovery, "Kathryn is hurt and taken to hospital. Michael and Allison return to their state of denial, but are partially recovered"),
+    new (Scenes13_14_15_16.Scene16KathrynIsHurtRecovery, "Kathryn is hurt and taken to the hospital. Michael and Allison return to a state of denial"),
+    new (Scenes13_14_15_16.Scene16KathrynIsHurtNoRecovery, "Kathryn is hurt and taken to the hospital. Michael and Allison return to a state of denial, but are partially recovered"),
 };
 
 var endingValue = Helper.GetSceneValue(16, "What ending will the movie have?", optionsEnding);
