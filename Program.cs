@@ -137,7 +137,7 @@ var input3 = scene13And14Value + scene15Value + endingValue;
 var input4 = 0x0F;
 var input9 = input1 + input2 + input3 + input4;
 var input9Value = $"{input9:X}";
-var input9Shortvalue = input9Value.Length > 2 ? input9Value.Substring(1, 2) : input9Value;
+var input9Shortvalue = input9Value.Length > 2 ? input9Value[^2..] : input9Value;
 
 Console.WriteLine();
 Console.WriteLine("You will get this version if you use the following inputs for restoring the session:");
