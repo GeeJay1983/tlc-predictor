@@ -1,46 +1,14 @@
+/// <summary>
+/// Container class for scene-related types and enums.
+/// </summary>
 internal static class Scenes
 {
-    public static Scenes2_4_5_6 GetScene2Value(int choice)
-    {
-        return choice switch
-        {
-            2 => Scenes2_4_5_6.Scene2KathrynUndressing,
-            3 => Scenes2_4_5_6.Scene2PeekKathrynUndressing,
-            _ => Scenes2_4_5_6.Scene2KathrynIsDressed
-        };
-    }
-
-    public static Scenes2_4_5_6 GetScene4Value(int choice)
-    {
-        return choice switch
-        {
-            2 => Scenes2_4_5_6.Scene4KathrynGivesGroceryList,
-            3 => Scenes2_4_5_6.Scene4MichaelOffersSpongeBath,
-            _ => Scenes2_4_5_6.Scene4KathrynOffersSpongeBath
-        };
-    }
-
-    public static Scenes2_4_5_6 GetScene5Value(int choice)
-    {
-        return choice switch
-        {
-            2 => Scenes2_4_5_6.Scene5MichaelIsReluctant,
-            3 => Scenes2_4_5_6.Scene5MichaelIsAngry,
-            _ => Scenes2_4_5_6.Scene5KathrynPredictsBehavior
-        };
-    }
-
-    public static Scenes2_4_5_6 GetScene6Value(int choice)
-    {
-        return choice switch
-        {
-            2 => Scenes2_4_5_6.Scene6KathrynIsAnnoyed,
-            3 => Scenes2_4_5_6.Scene6MichaelIsAngry,
-            _ => Scenes2_4_5_6.Scene6KathrynIsAngry
-        };
-    }
 }
 
+/// <summary>
+/// Represents a scene choice pairing an enum value with a human-readable description.
+/// </summary>
+/// <typeparam name="T">The enum type representing the scene choice.</typeparam>
 internal sealed class ScenePair<T>(T sceneChoice, string sceneDescription) where T : Enum
 {
     public T SceneChoice { get; } = sceneChoice;
@@ -48,6 +16,10 @@ internal sealed class ScenePair<T>(T sceneChoice, string sceneDescription) where
     public string SceneDescription { get; } = sceneDescription;
 }
 
+/// <summary>
+/// Enum representing scene choices for scenes 2, 4, 5, and 6.
+/// Values are hex-encoded bit patterns used in the DVD session code calculation.
+/// </summary>
 enum Scenes2_4_5_6
 {
     Default = 0x0,
@@ -65,6 +37,10 @@ enum Scenes2_4_5_6
     Scene6MichaelIsAngry = 0x03
 }
 
+/// <summary>
+/// Enum representing scene choices for scenes 7, 8, 9, 10, 11, and 12.
+/// Values are hex-encoded bit patterns used in the DVD session code calculation.
+/// </summary>
 enum Scenes7_8_9_10_11_12
 {
     Default = 0x0,
@@ -84,6 +60,10 @@ enum Scenes7_8_9_10_11_12
     Scene11LessExplicit_Scene12LessExplicit = 0x03
 }
 
+/// <summary>
+/// Enum representing scene choices for scenes 13, 14, 15, and 16.
+/// Values are hex-encoded bit patterns used in the DVD session code calculation.
+/// </summary>
 enum Scenes13_14_15_16
 {
     Default = 0x0,
